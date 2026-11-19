@@ -15,7 +15,7 @@ const (
 	GitHub Source = "github"
 	Gitee  Source = "gitee"
 
-	GiteeRepository    = "xiaobaiqaq/naruto-substitute-timer"
+	GiteeRepository    = "liuguanyi688-del/naruto-substitute-timer"
 	GiteeRepositoryURL = "https://gitee.com/" + GiteeRepository
 	GiteeAPIBase       = "https://gitee.com/api/v5/repos/" + GiteeRepository
 )

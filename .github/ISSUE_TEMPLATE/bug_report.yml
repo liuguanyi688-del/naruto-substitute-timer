@@ -1,0 +1,47 @@
+name: BUG 报告
+description: 崩溃、采集连接、更新、悬浮窗等非识别类问题
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+      description: 看到了什么、期望是什么
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本与构建
+      placeholder: 0.3.4-fork.1 / 上游 v0.3.4 / 自行构建 commit
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境
+      placeholder: MuMu 6 安卓15 / 2560x1440 / 高性能电源计划 / 帧率上限 144
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: diag
+    attributes:
+      label: 诊断包 / 日志
+      description: 「诊断」导出的支持诊断包 ZIP 直接拖进输入框；默认不含原帧与账号名以外的隐私
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 提交前
+      options:
+        - label: 已附诊断包或 debug/sessions 录帧
+          required: true
+        - label: 已确认采集连接正常（浮窗不是"画面未识别/重连等待"）
+          required: true

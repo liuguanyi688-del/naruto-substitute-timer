@@ -1,0 +1,43 @@
+name: 忍者识别问题
+description: 某忍者替身读不出、读错时长、误报、认边错
+labels: ["recognition"]
+body:
+  - type: input
+    id: ninja
+    attributes:
+      label: 忍者全名（含形态括号）
+      placeholder: 川木[楔]二 / 宇智波佐助[侠隐江湖]
+    validations:
+      required: true
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: 症状
+      options:
+        - 完全不读替身
+        - 读了但倒计时时长错
+        - 没替身却起倒计时（误报）
+        - 认边错 / 一直待认边
+    validations:
+      required: true
+  - type: input
+    id: rate
+    attributes:
+      label: 拍照间隔与证据张数
+      placeholder: tracking.pollIntervalMs=100, minimumConfirmFrames=2
+    validations:
+      required: true
+  - type: textarea
+    id: observe
+    attributes:
+      label: 人工观察
+      description: 替身瞬间豆是否扣 1？豆色/位置是否与普通忍者不同？是否秒替后立刻摸豆补回？
+    validations:
+      required: true
+  - type: textarea
+    id: frames
+    attributes:
+      label: 录帧证据
+      description: debug/sessions/<session>/ 整目录压 ZIP 拖入；capture.jsonl 含逐帧豆状态与排除原因
+    validations:
+      required: true

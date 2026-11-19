@@ -18,7 +18,7 @@ import (
 	"time"
 )
 
-const Repository = "fangxiaobaiqaq1/naruto-substitute-timer"
+const Repository = "liuguanyi688-del/naruto-substitute-timer"
 const RepositoryURL = "https://github.com/" + Repository
 const APIBase = "https://api.github.com/repos/" + Repository
 const MaxDownload = 256 << 20

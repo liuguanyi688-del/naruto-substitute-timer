@@ -60,7 +60,7 @@ func summary(options BundleOptions) string {
 	fmt.Fprintln(&b, "# 替身计时器支持诊断包")
 	fmt.Fprintln(&b)
 	fmt.Fprintf(&b, "版本：%s\n\n", options.Version)
-	fmt.Fprintf(&b, "反馈 QQ 群：%s\n\n", BugReportQQGroup)
+	fmt.Fprintf(&b, "反馈地址：%s\n\n", FeedbackURL)
 	fmt.Fprintf(&b, "已保存采集目标：%s\n\n", configSummary(options.Config.Capture.MuMu))
 	if options.CaptureState.RequestedRevision != 0 || options.CaptureState.AppliedRevision != 0 || options.CaptureState.Source != "" || options.CaptureState.LastError != "" {
 		fmt.Fprintf(&b, "采集器已请求目标：%s（修订 %d）\n\n", configSummary(options.CaptureState.Requested), options.CaptureState.RequestedRevision)

@@ -378,7 +378,7 @@ func Default() Config {
 			RememberSide:              true,
 			AlwaysOnTop:               true,
 			AutoCheckUpdates:          true,
-			UpdateSource:              "gitee",
+			UpdateSource:              "github",
 			WindowOpacity:             1,
 			FontScale:                 1,
 			OverlayMode:               "full",

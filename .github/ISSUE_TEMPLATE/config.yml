@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 上游原版的问题
+    url: https://github.com/fangxiaobaiqaq1/naruto-substitute-timer/issues
+    about: 确认是上游原版（非本 fork 构建）的问题时，请到上游反馈

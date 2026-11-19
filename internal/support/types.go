@@ -9,7 +9,7 @@ import (
 	"narutotimer/internal/frame"
 )
 
-const BugReportQQGroup = "1109044204"
+const FeedbackURL = "https://github.com/liuguanyi688-del/naruto-substitute-timer/issues"
 
 type BundleOptions struct {
 	Root          string

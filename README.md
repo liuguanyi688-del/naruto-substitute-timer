@@ -2,13 +2,13 @@
 
 Windows 10/11 x64 · MuMu / 雷电(LDPlayer) · 本地视觉识别 · MIT
 
-官网（下载、教程）：https://hy.312166.xyz · **BUG 反馈 QQ 群：1109044204**。遇到 MuMu SDK、截图或多开实例问题时，请在「诊断」中导出“支持诊断包（ZIP）”后反馈。
+**本项目为个人打磨 fork**：上游 [fangxiaobaiqaq1/naruto-substitute-timer](https://github.com/fangxiaobaiqaq1/naruto-substitute-timer)（MIT）。**BUG 反馈与忍者识别问题：[GitHub Issues](https://github.com/liuguanyi688-del/naruto-substitute-timer/issues)**。遇到 MuMu SDK、截图或多开实例问题时，请在「诊断」中导出“支持诊断包（ZIP）”后附到 issue。
 
 识别游戏画面的替身豆，在悬浮窗显示对方替身倒计时。模型、忍者资料、场景模板和 OCR 运行依赖均已内置。
 
 ## 下载与使用
 
-到 [最新发布页](https://github.com/fangxiaobaiqaq1/naruto-substitute-timer/releases/latest) 选择：
+到 [本仓库发布页](https://github.com/liuguanyi688-del/naruto-substitute-timer/releases/latest) 选择（首次发布前可用上游原版，或自行 `build.bat` 构建）：
 
 - **naruto-timer-universal.apk**：Android 12 及以上手机版。
 - **timer-app.exe**：便携版，放在可写目录直接运行。

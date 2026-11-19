@@ -1,0 +1,35 @@
+name: 掉帧 / 性能
+description: 开工具后游戏掉帧、CPU/GPU 占用异常
+labels: ["performance"]
+body:
+  - type: input
+    id: rate
+    attributes:
+      label: 拍照间隔与证据张数
+      placeholder: pollIntervalMs=100, minimumConfirmFrames=2
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境
+      placeholder: 电源计划 / MuMu 分辨率与帧率上限 / CPU 型号 / HVCI 是否开启
+    validations:
+      required: true
+  - type: textarea
+    id: delta
+    attributes:
+      label: 掉帧幅度
+      description: 基线帧率 → 开工具后帧率（读 MuMu 自带 FPS 计数器，对局中读）
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已试过的旋钮与结果
+      placeholder: 改过 pollIntervalMs / overlayMode / gpuAcceleration / 电源计划…各自效果
+  - type: textarea
+    id: measure
+    attributes:
+      label: 占用测量
+      description: 任务管理器或 Get-Process CPU 差值；debug/performance 的 pprof 包可拖入
