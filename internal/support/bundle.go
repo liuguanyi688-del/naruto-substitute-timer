@@ -296,7 +296,7 @@ func exportBundle(ctx context.Context, options BundleOptions) (string, error) {
 	}
 
 	if err := write("application.json", map[string]any{
-		"version": options.Version, "generated_at": time.Now(), "feedback_qq_group": BugReportQQGroup,
+		"version": options.Version, "generated_at": time.Now(), "feedback_url": FeedbackURL,
 	}); err != nil {
 		return closeWithError(err)
 	}
